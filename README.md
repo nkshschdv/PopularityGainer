@@ -1,4 +1,11 @@
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Documentation and Presentation (Incomplete)
+
+
+1. AngularJS based Application Presentation(Incomplete)
+https://docs.google.com/presentation/d/1oSqzNGYq2cRvq6ACGqkwoT3RyEC63Ig-w3AUEdQd5S0/edit?usp=sharing
+2. AngularJS based Application Proposed Document
+https://docs.google.com/document/d/1IQflwD602yIr0V-SUJbHnFMXzb1VGjN6q8nKwYukOks/edit?usp=sharing
 
 ## How to use this template
 
