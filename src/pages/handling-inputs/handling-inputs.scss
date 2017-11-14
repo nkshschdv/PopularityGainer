@@ -1,0 +1,129 @@
+page-handling-inputs {
+
+//slide colors
+
+.slide1 {
+  background-color: rgb(230, 73, 99);
+}
+.slide2 {
+  background-color: blueviolet;
+}
+.slide3 {
+  background-color: #3ca53c;
+}
+
+//slide Charateristics
+.slide-zoom {
+  height: 100%;
+}
+
+.slide-title {
+  margin-top: 10.8rem;
+  font-family: cursive;
+
+
+
+}
+.slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 18px 0;
+  position: relative;
+  top:100px;
+
+
+}
+
+.slide-title3{
+  position: absolute;
+  top:250px;
+  left: 50px;
+  font-family:cursive;
+}
+
+.arrow{
+  position: relative;
+  top:300px;
+}
+
+
+//textures and fonts
+
+b {
+  font-weight: 500;
+  font-family: cursive;
+}
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: cursive;
+  font-size: 20px;
+  color: rgb(228, 233, 241);
+  b {
+    color: #000000;
+    font-family: cursive;
+
+  }
+
+} // new styles
+
+strong{
+  font-family: cursive;
+  color: initial;
+}
+
+strong.slide2Text{
+ position: absolute;
+ top:20px;
+}
+
+strong.continue{
+  color:rgb(240, 223, 223);
+}
+
+
+// profile picture adjustments
+.profilepic {
+  height: 300px;
+  width: 300px;
+  left: 23px;
+  top:120px;
+  position: absolute;
+
+
+  border: 5px solid black;
+  border-radius: 50%;
+
+}
+
+// upload button and picture adjustments
+.uploadBtn{
+  position: absolute;
+  top:450px;
+  right:90px;
+}
+
+
+div img.image {
+height: 550px;
+border-radius:50%;
+width: 550px;
+
+}
+
+div img.uploadImage
+{
+  height: 300px;
+  border-radius:50%;
+  width: 300px;
+
+}
+
+.sampleImage{
+  position: relative;
+  top:80px;
+
+}
+
+}

@@ -1,0 +1,8 @@
+{
+  "name": "popularity-gainer",
+  "app_id": "fadb41c9",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

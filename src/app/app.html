@@ -1,0 +1,70 @@
+<ion-menu [content]="content" type="push" class="menu" persistent="true" >
+  <ion-header  >
+    <ion-toolbar color="navColor">
+      <ion-title >Popularity Gainer</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu_color">
+    <ion-list >
+      <button menuClose ion-item  (click)="openPage(rootPage)" *ngIf="authenticationToken == false" class="items" >
+        <ion-icon name="home"></ion-icon>
+        Home
+      </button>
+    </ion-list>
+    <!-- login page -->
+    <ion-list>
+      <button menuClose ion-item  (click)="openPage(loginpage)"  *ngIf="authenticationToken == false" class="items" >
+        <ion-icon name="key"></ion-icon>
+        Login
+      </button>
+    </ion-list>
+    <!-- signup page -->
+    <ion-list>
+      <button menuClose ion-item  (click)="openPage(signuppage)"  *ngIf="authenticationToken == false" class="items" >
+        <ion-icon name="contacts"></ion-icon>
+        Signup
+      </button>
+    </ion-list>
+    <!-- list page -->
+    <ion-list>
+      <button menuClose ion-item  (click)="openPage(listpage)"  *ngIf="authenticationToken == true" class="items" >
+        <ion-icon name="list-box"></ion-icon>
+        List
+      </button>
+    </ion-list>
+
+
+    <ion-list>
+      <button menuClose ion-item  (click)="openPage(topgainers)"  *ngIf="authenticationToken == true" class="items" >
+        <ion-icon name="man"></ion-icon>
+        Top Gainers
+      </button>
+    </ion-list>
+    <ion-list>
+      <button menuClose ion-item  (click)="openPage(statspage)"  *ngIf="authenticationToken == true" class="items" >
+        <ion-icon name="heart"></ion-icon>
+        Popularity Stats
+      </button>
+    </ion-list>
+      <!-- Scan Qrcode Page -->
+        <ion-list>
+            <button menuClose ion-item  (click)="scanQrcode()"  *ngIf="authenticationToken == true" class="items" >
+              <ion-icon name="qr-scanner"></ion-icon>
+              QR Scan
+            </button>
+          </ion-list>
+     <!--  logout Page -->
+     <ion-list>
+        <button menuClose ion-item  (click)="logoutUser()"  *ngIf="authenticationToken == true" class="items" >
+          <ion-icon name="log-out"></ion-icon>
+          Logout
+        </button>
+      </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"  ></ion-nav>

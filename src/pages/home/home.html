@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar  color="navColor">
+   <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title text-center>Popularity Gainer</ion-title>
+
+  <!-- mic button on the top right  -->
+
+    <ion-icon name="mic" medium (press)="pressEvent($event)"  class="micButton" end></ion-icon>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="classContent" >
+
+
+  <ion-slides pager  class="homeSlider">
+    <div class="sliders">
+      <ion-slide  class="slide1">
+        <img src="assets/pictures/slide1.PNG" class="slide-image" />
+      </ion-slide>
+
+      <ion-slide  class="slide2">
+        <img src="assets/pictures/slide2.PNG" class="slide-image"/>
+      </ion-slide>
+
+      <ion-slide  class="slide3">
+        <img src="assets/pictures/2.jfif" class="slide-image"/>
+      </ion-slide>
+    </div>
+
+
+
+    </ion-slides>
+
+</ion-content>

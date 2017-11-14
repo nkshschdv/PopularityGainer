@@ -1,0 +1,42 @@
+
+<ion-content>
+  <ion-slides pager effect="flip" height="100%" >
+
+    <!-- Slide 1:  Getting the name of user -->
+    <ion-slide  class="slide1" >
+      <img src="assets/pictures/1.png" class="slide-image"  height="500" width="500"/>
+      <h2 class="slide-title" >Thank you for Login</h2>
+      <p>Getting started in few moments..Need some of your information for gaining popularity</p>
+
+    </ion-slide>
+    <!-- Slide 2:  Getting the Geo location of user -->
+    <ion-slide  class="slide2"  >
+        <strong class="slide2Text">
+          Showcase your popularity with your wonderful Profile Picture
+        </strong>
+        <img src="assets/pictures/upload.png" *ngIf="!image"  class="sampleImage"  height="300" width="300"/>
+
+            <img [src]="image" class="profileImage" alt=""  *ngIf="image" class="profilepic">
+
+            <hr>
+            <button  class="uploadBtn" ion-button  outline color="light" (click)="clickImage()"><strong>upload Image</strong></button>
+
+    </ion-slide >
+
+    <!-- Slide 3:  Getting the college and Semester of User -->
+
+    <ion-slide  class="slide3">
+
+
+      <h2 class="slide-title3">Ready to Gain Popularity?</h2>
+      <button ion-button large round  icon-end color="primary"  class="arrow" (click)="gotoProfilePage(profilepage)" >
+        <strong class="continue">Continue</strong>
+
+      </button>
+    </ion-slide>
+
+    <!--  Slide 4: Getting the Interest of the user and finding a Way to represent that interest -->
+
+  </ion-slides>
+
+  </ion-content>
